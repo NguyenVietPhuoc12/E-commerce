@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>E-commerce Website with Frontend Developer</title>
+</head>
+<body>
+    <!--========================= HEADER START =========================-->
+    <header class="header">
+        <div id="menu-bar" class="bx bx-menu" onclick="showNavbar()"></div>
+
+        <a href="#" class="header__logo">   
+            <img src="./assets/images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#account">account</a>
+        </nav>
+
+        <div class="header__icons">
+            <a href="#" class="bx bxs-heart"></a>
+            <a href="./html/cart__page.html" target="_blank" class="bx bx-briefcase-alt"></a>
+            <a href="./html/login_page.html" target="_blank" class="bx bxs-user"></a>
+        </div>
+    </header>
+    <!--=============X=========== HEADER END =============X===========-->
+
+    <!--========================= HOME START =========================-->
+    <section class="home" id="home">
+        <!-- Slide container 1 -->
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <span>nike red shoes</span>
+                    <h3>nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam aliquam debitis repellat, praesentium odit recusandae? Corporis, iste. Unde, veniam.</p>
+                    <a href="#" class="btn">
+                        explorer now
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/home-shoe-1.png" class="shoe" alt="">
+                    <img src="./assets/images/home-text-1.png" class="text" alt="">
+                </div>
+            </div>
+        <!-- Slide container 1 -->
+
+        </div>
+        <!-- Slide Container 2 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nike blue shoes</span>
+                    <h3 style="color: #0d62ff;">nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam aliquam debitis repellat, praesentium odit recusandae? Corporis, iste. Unde, veniam.</p>
+                    <a href="#"  onmouseover="handleContentBlue()" onmouseout="clearHandleContentBlue()" class="btn blue--btn" style="border: 0.2rem solid #0d62ff;">
+                        explorer now
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/home-shoe-2.png" class="shoe" alt="">
+                    <img src="./assets/images/home-text-2.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Slide Container 2 -->
+
+        <!-- Slide Container 3 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>nike yellow shoes</span>
+                    <h3 style="color: #ffc021;">nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam aliquam debitis repellat, praesentium odit recusandae? Corporis, iste. Unde, veniam.</p>
+                    <a href="#" onmouseover="handleContentYellow()" onmouseout="clearHandleContentYellow()" class="btn yellow--btn" style="border: 0.2rem solid #ffc021;">
+                        explorer now
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="./assets/images/home-shoe-3.png" class="shoe" alt="">
+                    <img src="./assets/images/home-text-3.png" class="text" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Slide Container 3 -->
+
+
+        <div id="prev" class="bx bx-chevron-left" onclick="prevSlide()"></div>
+        <div id="next" class="bx bx-chevron-right" onclick="nextSlide()"></div>
+    </section>
+    <!--============X============ HOME END ==============X==========-->
+
+    <!--========================= SERVICES START =========================-->
+    <section class="services">
+        <div class="services__container">
+            <div class="service">
+                <i class='bx bxs-truck'></i>
+                <h3>fast delivery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusantium.</p>
+                
+            </div>
+            <div class="service">
+                <i class='bx bx-undo'></i>
+                <h3>15 days replacements</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusantium.</p>
+            </div>
+            <div class="service">
+                <i class='bx bx-headphone'></i>
+                <h3>24 x 7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, accusantium.</p>
+            </div>
+        </div>
+    </section>
+    <!--=============X=========== SERVICES END ============X============-->
+
+    <!--========================= PRODUCTS START =========================-->
+    <section class="products" id="products">
+        <h1 class="heading">latest <span>products</span></h1>
+
+        <div class="products__container">
+            <!-- PRODUCT 1 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart"  onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/f-img-1.2.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="./html/product__page.html" target="_blank" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 1 -->
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-2.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 2 -->
+
+            <!-- PRODUCT 3 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-3.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 3 -->
+
+            <!-- PRODUCT 4 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-4.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 4 -->
+
+            <!-- PRODUCT 5 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-5.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 5 -->
+
+            <!-- PRODUCT 6 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-6.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 6 -->
+
+            <!-- PRODUCT 7 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-1.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 7 -->
+
+            <!-- PRODUCT 8 -->
+            <div class="product">
+                <div class="product__icons">
+                    <a href="#products" class="bx bxs-heart" onclick="toggleHeart()"></a>
+                    <a href="#products" class="bx bxs-share"></a>
+                    <a href="#products" class="bx bxs-show"></a>
+                </div>
+                <img src="./assets/images/product-6.png" alt="">
+                <div class="product__content">
+                    <h3>nike shoes</h3>
+                    <div class="price">$120.99 <span>$150.99</span></div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half' ></i>
+                    </div>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <!-- PRODUCT 8 -->
+
+        </div>
+    </section>
+    <!--============X============ PRODUCTS END ============X============-->
+
+    <!--========================= FEATURED START =========================-->
+    <section class="featured" id="featured">
+        <h1 class="featured__heading"> <span>feartured</span> products </h1>
+        
+        <!-- ROW 1 -->
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="./assets/images/f-img-1.1.png" class="featured__image-1" alt="">
+                    <img src="./assets/images/f-img-1.2.png" class="featured__image-1" alt="">
+                    <img src="./assets/images/f-img-1.3.png" class="featured__image-1" alt="">
+                    <img src="./assets/images/f-img-1.4.png" class="featured__image-1" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="./assets/images/f-img-1.1.png" class="big__image-1" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike airmax shoes</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nam aliquid harum molestiae cum, nostrum laudantium odio numquam nihil.</p>
+                <div class="price">$80.99 <span>$120.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+        <!-- ROW 1 -->
+
+        <!-- ROW 2 -->
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="./assets/images/f-img-2.1.png" class="featured__image-2" alt="">
+                    <img src="./assets/images/f-img-2.2.png" class="featured__image-2" alt="">
+                    <img src="./assets/images/f-img-2.3.png" class="featured__image-2" alt="">
+                    <img src="./assets/images/f-img-2.4.png" class="featured__image-2" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="./assets/images/f-img-2.1.png" class="big__image-2" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike airmax shoes</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nam aliquid harum molestiae cum, nostrum laudantium odio numquam nihil.</p>
+                <div class="price">$80.99 <span>$120.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+        <!-- ROW 2 -->
+
+        <!-- ROW 3 -->
+        <div class="row">
+            <div class="image-container">
+                <div class="small-image">
+                    <img src="./assets/images/f-img-3.1.png" class="featured__image-3" alt="">
+                    <img src="./assets/images/f-img-3.2.png" class="featured__image-3" alt="">
+                    <img src="./assets/images/f-img-3.3.png" class="featured__image-3" alt="">
+                    <img src="./assets/images/f-img-3.4.png" class="featured__image-3" alt="">
+                </div>
+                <div class="big-image">
+                    <img src="./assets/images/f-img-3.1.png" class="big__image-3" alt="">
+                </div>
+            </div>
+            <div class="content">
+                <h3>new nike airmax shoes</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo nam aliquid harum molestiae cum, nostrum laudantium odio numquam nihil.</p>
+                <div class="price">$80.99 <span>$120.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+        <!-- ROW 3 -->
+
+    </section>
+    <!--===========X============= FEATURED END =============X===========-->
+
+    <!--========================= REVIEW START =========================-->
+    <section class="reviews" id="review">
+        <h1 class="heading"> customer's <span>review</span> </h1>
+        <div class="reviews__container">
+            <div class="review">
+                <img src="./assets/images/pic1.jpg" alt="">
+                <h3>Tạ Thùy Linh</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio harum obcaecati officiis nostrum perspiciatis fugit magnam, repellat labore adipisci aliquid, vitae quam numquam eaque a, amet tenetur praesentium provident dolore!</p>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="review">
+                <img src="./assets/images/pic2.jpg" alt="">
+                <h3>Nguyễn Yến Vy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio harum obcaecati officiis nostrum perspiciatis fugit magnam, repellat labore adipisci aliquid, vitae quam numquam eaque a, amet tenetur praesentium provident dolore!</p>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+            </div>
+            <div class="review">
+                <img src="./assets/images/pic3.jpg" alt="">
+                <h3>Đặng Thùy Trâm Anh</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio harum obcaecati officiis nostrum perspiciatis fugit magnam, repellat labore adipisci aliquid, vitae quam numquam eaque a, amet tenetur praesentium provident dolore!</p>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===========X============= REVIEW END ==============X==========-->
+
+    <!--========================= NEWSLETTER START =========================-->
+    <section class="newsletter">
+        <div class="content">
+            <h3>monthly newsletter</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi temporibus optio, accusantium voluptatum ad voluptas iure aliquam officia impedit harum dolore eum asperiores dolores totam ducimus, minus quaerat voluptate eaque?</p>
+            <form action="POST">
+                <input type="email" placeholder="enter your email" class="box">
+                <input type="submit" value="send" class="btn">
+            </form>
+        </div>
+    </section>
+    <!--============X============ NEWSLETTER END =============X===========-->
+
+    <!--========================= FOOTER START =========================-->
+    <section class="footer">
+        <div class="footer__container">
+            <div class="box">
+                <h3>our stores</h3>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">india</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">USA</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">japan</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">paris</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">New Zealand</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="box__detail">
+                    <i class='bx bx-home'></i>
+                    <a href="#home">home</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-tag'></i>
+                    <a href="#products">products</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxs-truck'></i>
+                    <a href="#featured">featured</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bx-headphone'></i>
+                    <a href="#review">review</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favorite</a>
+                <a href="#">my orders</a>
+                <a href="#">newsletter</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="box__detail">
+                    <i class='bx bxl-facebook'></i>
+                    <a href="https://facebook.com">facebook</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-twitter'></i>
+                    <a href="https://twitter.com">twitter</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-instagram'></i>
+                    <a href="https://instagram.com">instagram</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-linkedin'></i>
+                    <a href="https://linkedin.com">linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="credit"> &#169 created by <span> mr. nguyen viet phuoc </span> | all right reserved. </div>
+    </section>
+    <!--============X============ FOOTER END ===============X=========-->
+
+    <!-- Contact SECTION -->
+    <section class="contact__now">
+        <div class="contact__container">
+            <i class='bx bx-phone bx-tada' ></i>
+            <a href="tel:+84.702.407.702">+84.702.407.702</a>
+        </div>
+    </section>
+
+
+    <script src="/assets/javascript/home_page.js"></script>
+</body>
+</html>

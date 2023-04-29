@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo_navbar.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Home > cart__page</title>
+</head>
+<body>
+    <!--========================= HEADER START =========================-->
+    <header class="header">
+        <div id="menu-bar" class="bx bx-menu" onclick="showNavbar()"></div>
+
+        <a href="#" class="header__logo">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#account">account</a>
+        </nav>
+
+        <div class="header__icons">
+            <a href="#" class="bx bxs-heart"></a>
+            <a href="./html/cart__page.html" target="_blank" class="bx bx-briefcase-alt"></a>
+            <a href="./login_page.html" target="_blank" class="bx bxs-user"></a>
+        </div>
+    </header>
+    <!--=============X=========== HEADER END =============X===========-->
+
+
+    <section class="cart">
+        <div class="cart__container">
+            <table>
+                <tr>
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart__info">
+                            <img src="../assets/images/f-img-1.1.png" alt="">
+                            <div class="">
+                                <p>Nike Shoes</p>
+                                <span>Price: $120.99</span>
+                                <a href="">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" value="1">
+                    </td>
+                    <td>$120.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart__info">
+                            <img src="../assets/images/f-img-2.1.png" alt="">
+                            <div class="">
+                                <p>Nike Shoes</p>
+                                <span>Price: $120.99</span>
+                                <a href="">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" value="1">
+                    </td>
+                    <td>$120.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart__info">
+                            <img src="../assets/images/f-img-3.1.png" alt="">
+                            <div class="">
+                                <p>Nike Shoes</p>
+                                <span>Price: $120.99</span>
+                                <a href="">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" value="1">
+                    </td>
+                    <td>$120.99</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart__info">
+                            <img src="../assets/images/product-1.png" alt="">
+                            <div class="">
+                                <p>Nike Shoes</p>
+                                <span>Price: $120.99</span>
+                                <a href="">remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" value="1">
+                    </td>
+                    <td>$120.99</td>
+                </tr>
+            </table>
+
+            <div class="total__price">
+                <table>
+                    <tr>
+                        <td>subtotal:</td>
+                        <td>$1000.00</td>
+                    </tr>
+                    <tr>
+                        <td>tax:</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>total:</td>
+                        <td>$1035.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <div class="box">
+                <h3>our stores</h3>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">india</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">USA</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">japan</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">paris</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">New Zealand</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="box__detail">
+                    <i class='bx bx-home'></i>
+                    <a href="#home">home</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-tag'></i>
+                    <a href="#products">products</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxs-truck'></i>
+                    <a href="#featured">featured</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bx-headphone'></i>
+                    <a href="#review">review</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favorite</a>
+                <a href="#">my orders</a>
+                <a href="#">newsletter</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="box__detail">
+                    <i class='bx bxl-facebook'></i>
+                    <a href="https://facebook.com">facebook</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-twitter'></i>
+                    <a href="https://twitter.com">twitter</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-instagram'></i>
+                    <a href="https://instagram.com">instagram</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-linkedin'></i>
+                    <a href="https://linkedin.com">linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="credit"> &#169 created by <span> mr. nguyen viet phuoc </span> | all right reserved. </div>
+    </section>
+
+    <script src="../assets/javascript/home_page.js"></script>
+</body>
+</html>

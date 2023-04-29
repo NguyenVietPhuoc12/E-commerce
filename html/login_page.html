@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo_navbar.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Home > login__page</title>
+</head>
+<body>
+    <header class="header">
+        <div id="menu-bar" class="bx bx-menu" onclick="showNavbar()"></div>
+
+        <a href="#" class="header__logo">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="#products">products</a>
+            <a href="#featured">featured</a>
+            <a href="#review">review</a>
+            <a href="#account">account</a>
+        </nav>
+
+        <div class="header__icons">
+            <a href="#" class="bx bxs-heart"></a>
+            <a href="#" class="bx bx-briefcase-alt"></a>
+            <a href="./html/login_page.html" target="_blank" class="bx bxs-user"></a>
+        </div>
+    </header>
+
+    <div class="center">
+        <form action="POST" class="form" id="form-1">
+            <h3 class="form__heading">register user</h3>
+            <p class="form__desc">Let's login user to used for our services.</p>
+
+            <div class="spacer"></div>
+
+            <!-- Input Fullname -->
+            <div class="form-group">
+                <label for="fullname" class="form-label">full name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name..." class="form__control">
+                <span class="form__message"></span>
+            </div>
+            <!-- Input Fullname -->
+
+            <!-- Input email -->
+            <div class="form-group">
+                <label for="email" class="form-label">email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." class="form__control">
+                <span class="form__message"></span>
+            </div>
+            <!-- Input email -->
+
+            <!-- Input password -->
+            <div class="form-group">
+                <label for="password" class="form-label">your password:</label>
+                <div class="password__detail">
+                    <input type="password" id="password" name="password" placeholder="enter your password..." class="form__control">
+                    <i class='bx bx-show' onclick="showPass()"></i>
+                </div>
+                <!-- <i class='bx bx-show'></i> -->
+                <span class="form__message"></span>
+            </div>
+            <!-- Input password -->
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">retries your password:</label>
+                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="retries enter your password..." class="form__control">
+                <span class="form__message"></span>
+            </div>
+
+            <button class="form__submit">register form</button>
+
+            <div class="form__footer">
+                <input type="checkbox">
+                <p>remember me?</p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <div class="box">
+                <h3>our stores</h3>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">india</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">USA</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">japan</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">paris</a>
+
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-map'></i>
+                    <a href="#">New Zealand</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <div class="box__detail">
+                    <i class='bx bx-home'></i>
+                    <a href="#home">home</a>
+                </div>
+                <div class="box__detail">
+                    <i class='bx bx-tag'></i>
+                    <a href="#products">products</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxs-truck'></i>
+                    <a href="#featured">featured</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bx-headphone'></i>
+                    <a href="#review">review</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favorite</a>
+                <a href="#">my orders</a>
+                <a href="#">newsletter</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <div class="box__detail">
+                    <i class='bx bxl-facebook'></i>
+                    <a href="https://facebook.com">facebook</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-twitter'></i>
+                    <a href="https://twitter.com">twitter</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-instagram'></i>
+                    <a href="https://instagram.com">instagram</a>
+                </div>
+
+                <div class="box__detail">
+                    <i class='bx bxl-linkedin'></i>
+                    <a href="https://linkedin.com">linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="credit"> &#169 created by <span> mr. nguyen viet phuoc </span> | all right reserved. </div>
+    </section>
+
+
+    <script src="../assets/javascript/home_page.js"></script>
+    <script src="../assets/javascript/validateForm.js"></script>
+    <script>
+
+        // Function show pass word
+        function showPass() {
+            let formElement = document.querySelector('#form-1');
+            let inputElement = formElement.querySelector('#password');
+            let showPass = formElement.querySelector('.password__detail i');
+
+
+            if (inputElement.type === 'password') {
+                inputElement.type = 'text';
+                showPass.classList.remove('bx-show');
+                showPass.classList.add('bx-hide');
+            } else {
+                inputElement.type = 'password';
+                showPass.classList.remove('bx-hide');
+                showPass.classList.add('bx-show');
+
+            }
+        }
+
+        // Validator Form Libraries
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form__message',
+            formGroupSelector: '.form-group',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', function() {
+                    return document.querySelector('#form-1 #password').value;
+                }, 're-enter incorrect password!')
+            ],
+            onSubmit: function(data) {
+                // call API
+                console.log(data);
+            },
+            showMessage: function(message) {
+                alert(message);
+            }
+        });
+
+    </script>
+</body>
+</html>
